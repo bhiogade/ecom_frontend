@@ -1,0 +1,18 @@
+import { Paper, Typography } from "@material-ui/core";
+import CategoryFilter from "./components/CategoryFilter";
+import PriceFilter from "./components/PriceFilter";
+
+const Filters = () => {
+    
+  return (
+    <Paper elevation={5} style={{ height: "100vh", margin: '20px', padding: '20px' }}>
+      <Typography variant="h5">Apply Filters</Typography>
+      <div style={{marginTop: '24px', display: 'flex', flexDirection: 'column'}}>
+        <CategoryFilter />
+        <PriceFilter />
+      </div>
+    </Paper>
+  );
+};
+
+export default Filters;
